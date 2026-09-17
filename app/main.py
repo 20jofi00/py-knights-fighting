@@ -1,4 +1,3 @@
-from app.knights.config import KNIGHTS
 from app.knights.fight import fight
 from app.knights.preparation import apply_knight
 
@@ -19,6 +18,3 @@ def battle(knights_config: dict) -> dict:
         knights_config[knight_key]["name"]: knights_config[knight_key]["hp"]
         for knight_key in knight_keys
     }
-
-
-print(battle(KNIGHTS))
